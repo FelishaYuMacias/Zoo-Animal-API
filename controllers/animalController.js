@@ -14,9 +14,7 @@ router.get("/", (req, res) => {
     })
 })
 router.get("/:id", (req, res) => {
-    Animal.findByPk(req.params.id, {
-        include: [User]
-    }).then(animalData => {
+    Animal.findByPk(req.params.id).then(animalData => {
         res.json(animalData)
     }).catch(err => {
         console.log(err);
