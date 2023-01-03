@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { Animal } = require('../models');
+const { Animal } = require('../models/Animal.js');
 
 router.get("/", (req, res) => {
     Animal.findAll().then(allAnimals => {
