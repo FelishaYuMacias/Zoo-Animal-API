@@ -1,5 +1,5 @@
 {
-  "name": "Zoo-Animal-API",
+  "name": "zoo-animal-api",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -13,5 +13,17 @@
     "express": "^4.18.2",
     "mysql2": "^2.3.3",
     "sequelize": "^6.28.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelishaYuMacias/Zoo-Animal-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelishaYuMacias/Zoo-Animal-API/issues"
+  },
+  "homepage": "https://github.com/FelishaYuMacias/Zoo-Animal-API#readme"
 }
