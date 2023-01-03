@@ -4,7 +4,7 @@ const {Animal} = require("../models");
 
 const animalData = [
     {
-        image_link:"https://en.wikipedia.org/wiki/File:African_Elephant_(Loxodonta_africana)_male_(17289351322).jpg",
+        image_link:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/547px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg",
         name:"African Bush Elephant",
         latin_name:"Loxodonta africana africana",
         lifespan:"60 - 70 years",
@@ -49,7 +49,7 @@ const animalData = [
         weight_max:"893lbs"
     },
     {
-        image_link:"https://en.wikipedia.org/wiki/File:Cuttlefish_komodo_large.jpg",
+        image_link:"https://upload.wikimedia.org/wikipedia/commons/9/9f/Cuttlefish_komodo_large.jpg",
         name:"Cuttlefish",
         latin_name:"Sepiida",
         lifespan:"2 years",
