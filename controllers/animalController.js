@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { Animal } = require('../models/Animal.js');
+const { Animal } = require('../models');
 
 router.get("/", (req, res) => {
     Animal.findAll().then(allAnimals => {
@@ -13,8 +13,32 @@ router.get("/", (req, res) => {
         })
     })
 })
-router.get("/:id", (req, res) => {
-    Animal.findByPk(req.params.id).then(animalData => {
+//random animal
+router.get("/random", async (req, res) => {
+
+    let temp = []
+    const animalArray = await Animal.findAll()
+  
+    animalArray.map(animal => {
+      temp.push(router.get({ plain: true }).id)
+    })
+  
+    const randomID = Math.floor(Math.random() * temp.length +1)
+    console.log(randomID)
+    Animal.findByPk(randomID
+    ).then(randomAnimal => {
+        res.json(randomAnimal)
+    }).catch(err => {
+        console.log(err);
+        res.json({
+            msg: "an error occurred",
+            err,
+        })
+    })
+})
+
+router.get("/:id", (req,res) => {
+    Animal.findByPk(req.params.randomAnimal).then(animalData => {
         res.json(animalData)
     }).catch(err => {
         console.log(err);
@@ -81,5 +105,6 @@ router.put("/:id", (req, res) => {
         res.status(500).json({ msg: "an error occured", err })
     }
 })
+
 
 module.exports = router;
