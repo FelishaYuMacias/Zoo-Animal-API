@@ -4,22 +4,81 @@ const seed = async ()=>{
     await sequelize.sync({force:true})
   
     const animals = [
-        // {
-        //     task:"Be the very best, like no one ever was",
-        //     priority:"high",
-        //     UserId:1
-        // },
-        // {
-        //     task:"Catch 'em all!",
-        //     priority:"high",
-        //     UserId:1
-        // },
-        // {
-        //     task:"take a nap",
-        //     priority:"med",
-        //     UserId:2
-        // },
-
+        {
+            image_link:"https://en.wikipedia.org/wiki/File:African_Elephant_(Loxodonta_africana)_male_(17289351322).jpg",
+            name:"African Bush Elephant",
+            latin_name:"Loxodonta africana africana",
+            lifespan:"60 - 70 years",
+            animal_type:"Mammal",
+            geo_range:"central and southern Africa",
+            habitat:"Forest, savannah and flood plains",
+            diet:"Herbivore",
+            active_time:"Diurnal",
+            length_min:"10ft",
+            length_max:"12ft",
+            weight_min:"7,900lbs",
+            weight_max:"12,000lbs"
+        },
+        {
+            image_link:"",
+            name:"",
+            latin_name:"",
+            lifespan:"",
+            animal_type:"",
+            geo_range:"",
+            habitat:"",
+            diet:"",
+            active_time:"",
+            length_min:"",
+            length_max:"",
+            weight_min:"",
+            weight_max:""
+        },
+        {
+            image_link:"",
+            name:"",
+            latin_name:"",
+            lifespan:"",
+            animal_type:"",
+            geo_range:"",
+            habitat:"",
+            diet:"",
+            active_time:"",
+            length_min:"",
+            length_max:"",
+            weight_min:"",
+            weight_max:""
+        },
+        {
+            image_link:"",
+            name:"",
+            latin_name:"",
+            lifespan:"",
+            animal_type:"",
+            geo_range:"",
+            habitat:"",
+            diet:"",
+            active_time:"",
+            length_min:"",
+            length_max:"",
+            weight_min:"",
+            weight_max:""
+        },
+        {
+            image_link:"",
+            name:"",
+            latin_name:"",
+            lifespan:"",
+            animal_type:"",
+            geo_range:"",
+            habitat:"",
+            diet:"",
+            active_time:"",
+            length_min:"",
+            length_max:"",
+            weight_min:"",
+            weight_max:""
+        },
     ]
     try{
         await Animal.bulkCreate(animals)
